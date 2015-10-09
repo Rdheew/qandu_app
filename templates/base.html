@@ -27,6 +27,7 @@
                   <li><a href="{% url 'question_list' %}">Questions</a></li>
                   <li><a href="{% url 'auth_logout' %}">Logout</a></li>
                   <li><a href="{% url 'question_create' %}">Add question</a></li>
+                  <li><a href="{% url 'user_detail' slug=user.username %}">Profile</a><li>
                   {% else %}
                   <li><a href="{% url 'auth_login' %}">Login</a></li>
                   {% endif %}
